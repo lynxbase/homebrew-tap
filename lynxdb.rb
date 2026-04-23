@@ -5,21 +5,21 @@
 class Lynxdb < Formula
   desc "Open-source log analytics database. Single binary. SPL2 query language."
   homepage "https://lynxdb.org"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lynxbase/lynxdb/releases/download/v0.1.3/lynxdb-v0.1.3-darwin-amd64.tar.gz"
-      sha256 "1e0a4073fbc2b31838476391d0bbea06450d29cb21e6998df95f9f324b5b50a4"
+      url "https://github.com/lynxbase/lynxdb/releases/download/v0.1.4/lynxdb-v0.1.4-darwin-amd64.tar.gz"
+      sha256 "512ea5192e5d8735d43a6a55a9426046ad92373de89fe313a00ccd4c1dc81b6f"
 
       define_method(:install) do
         bin.install "lynxdb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lynxbase/lynxdb/releases/download/v0.1.3/lynxdb-v0.1.3-darwin-arm64.tar.gz"
-      sha256 "bd2add2275a07911a4aebb227d5df51d7c88efebeb152dc33ad9b016ef2e9c79"
+      url "https://github.com/lynxbase/lynxdb/releases/download/v0.1.4/lynxdb-v0.1.4-darwin-arm64.tar.gz"
+      sha256 "c3791cade1652ddb2bdce95e0df46c16551c9a7c677891b7ddaa8cc57826ccbe"
 
       define_method(:install) do
         bin.install "lynxdb"
@@ -29,15 +29,15 @@ class Lynxdb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lynxbase/lynxdb/releases/download/v0.1.3/lynxdb-v0.1.3-linux-amd64.tar.gz"
-      sha256 "d22c1b07fffea33542a65d99941b8c8a5ce57dbe61b5f2b9b01642248abdd499"
+      url "https://github.com/lynxbase/lynxdb/releases/download/v0.1.4/lynxdb-v0.1.4-linux-amd64.tar.gz"
+      sha256 "5178728637b2262017503ba944118fa305963e72f0fe3317215da3d6446be3c1"
       define_method(:install) do
         bin.install "lynxdb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lynxbase/lynxdb/releases/download/v0.1.3/lynxdb-v0.1.3-linux-arm64.tar.gz"
-      sha256 "134cac0f99ed973c22664c99a9669359cbba624bbc91703bef089659a1caa4f5"
+      url "https://github.com/lynxbase/lynxdb/releases/download/v0.1.4/lynxdb-v0.1.4-linux-arm64.tar.gz"
+      sha256 "55a75baf8b8751043ace9f0460ae314f5149b3da0f588292e4aee1a8cb18b2b3"
       define_method(:install) do
         bin.install "lynxdb"
       end
