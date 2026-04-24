@@ -36,7 +36,7 @@ brew upgrade lynxdb
 
 ## What lives here
 
-- `lynxdb.rb` is the Homebrew formula for LynxDB.
+- `Formula/lynxdb.rb` is the Homebrew formula for LynxDB.
 - Formula releases are generated from the main project release pipeline.
 - Product docs live at [docs.lynxdb.org](https://docs.lynxdb.org/).
 
