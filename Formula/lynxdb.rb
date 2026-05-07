@@ -11,7 +11,7 @@ class Lynxdb < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lynxbase/lynxdb/releases/download/v0.1.7/lynxdb-v0.1.7-darwin-amd64.tar.gz"
-      sha256 "8cc4b32f9fcfb75c41eba7f36734b11860bba5770337aec7294172c3a0a2441a"
+      sha256 "a415ce5322a8db318161a3b8c2c741e114aa535655f7e8daabe8181279d126c5"
 
       define_method(:install) do
         bin.install "lynxdb"
@@ -19,7 +19,7 @@ class Lynxdb < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/lynxbase/lynxdb/releases/download/v0.1.7/lynxdb-v0.1.7-darwin-arm64.tar.gz"
-      sha256 "a084b57723987042b7563ce7f1aae8e986a8150915ab949a769edd70b29d0032"
+      sha256 "3481a1d955089a58141037df9e818c71384bcd3d45d62c0d452bb04fcd27d917"
 
       define_method(:install) do
         bin.install "lynxdb"
@@ -30,14 +30,14 @@ class Lynxdb < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/lynxbase/lynxdb/releases/download/v0.1.7/lynxdb-v0.1.7-linux-amd64.tar.gz"
-      sha256 "023be745d84b5f8499a42ef0e9f3f780760ed39109f6b1123d49844fe8c777e1"
+      sha256 "9798ece2e7db0823a85334f2fbedb93eabdc55f1bada7800056666bd5afeb346"
       define_method(:install) do
         bin.install "lynxdb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/lynxbase/lynxdb/releases/download/v0.1.7/lynxdb-v0.1.7-linux-arm64.tar.gz"
-      sha256 "5983f2d95fec679d26244ff89cd9871af64e76fd9363c5b10c565c54b6d1eb10"
+      sha256 "fd03f57087da72e1f4d20801ae5a3246352e316d7c03311972f201c0cc96e03f"
       define_method(:install) do
         bin.install "lynxdb"
       end
